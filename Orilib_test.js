@@ -41,7 +41,9 @@ function download_zip(url){
    file.on("finish", () => {
        file.close();
        console.log("Download Completed");
-       //TODO function to send zip to cloud storage 
+       //TODO function to send zip to cloud storage
+       console.log(`${filename_from_url(url)}.zip`)
+       uploadFile(`${filename_from_url(url)}.zip`).catch(console.error);
        unzip_file(filename_from_url(url));
        
        
@@ -60,6 +62,23 @@ function unzip_file(filename){
   //var zipEntries = zip.getEntries();
   zip.extractAllTo(/*target path*/ `./${filename}/`, /*overwrite*/ true);
 }
+const bucketName = 'france-competence-test.appspot.com';
+// Imports the Google Cloud client library
+const {Storage} = require('@google-cloud/storage');
+
+// Creates a client
+const storage = new Storage();
+
+async function uploadFile(filename) {
+  const options = {
+    destination: filename,
+
+  };
+
+  await storage.bucket(bucketName).upload(filename, options);
+  console.log(`${filename} uploaded to ${bucketName}`);
+}
+
 
 
 
