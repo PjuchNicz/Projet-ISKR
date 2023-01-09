@@ -15,8 +15,8 @@ async function main(){
 
 async function api_get(url){
   //Function to make a fetch to an url and return the json result
-  fetch(url, {method: 'GET', headers: {'Content-Type': 'application/json'}})
-  .then((response) => {console.log(response);return response.json()})
+  return fetch(url, {method: 'GET', headers: {'Content-Type': 'application/json'}})
+  .then((response) => response.json())
 }
 
 function get_last_url_csv(ressources){
