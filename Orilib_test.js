@@ -12,7 +12,6 @@ async function main(){
   const zip_url = get_last_url_csv(resources)
   console.log(zip_url ? zip_url : "Error no zip")
   download_zip(zip_url)
-  filename_from_url(zip_url)
 }
 
 async function api_get(url){
@@ -42,6 +41,10 @@ function download_zip(url){
    file.on("finish", () => {
        file.close();
        console.log("Download Completed");
+       //TODO function to send zip to cloud storage 
+       unzip_file(filename_from_url(url));
+       
+       
    });
 });
 }
@@ -49,5 +52,20 @@ function filename_from_url(url){
   //Function to extract the filename from an url
   return url.split('/').pop().split('.')[0];
 }
+var AdmZip = require("adm-zip");
+function unzip_file(filename){
+  console.log("a")
+  //Function to unzip a file
+  var zip = new AdmZip(`${filename}.zip`);
+  //var zipEntries = zip.getEntries();
+  zip.extractAllTo(/*target path*/ `./${filename}/`, /*overwrite*/ true);
+}
+
+
+
+
+
+
+
 
 module.exports = {main}
