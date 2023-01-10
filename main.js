@@ -1,3 +1,9 @@
 const lib = require("./Orilib_test");
 
-lib.main()
+
+async function start() {
+    console.log("Launch")
+    const value = await lib.main()
+ }
+
+ start()
