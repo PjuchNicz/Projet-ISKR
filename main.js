@@ -1,9 +1,9 @@
-const lib = require("./Orilib_test");
+const {get} = require("./process");
 
 
-async function start() {
+async function run() {
     console.log("Launch")
-    const value = await lib.main()
+    const value = await get()
  }
 
- start()
+ run()
