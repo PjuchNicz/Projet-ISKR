@@ -1,0 +1,70 @@
+{
+    "Numero_Fiche": "RNCP183",
+    "Bloc_Competences" : [
+        {
+            "Bloc_Competences_Code": "RNCP183BC02",
+            "Bloc_Competences_Libelle": "Assurer la maintenance des installations frigorifiques"
+        }    
+    ],
+    "Ccn" : [
+        {
+            "Ccn_1_Numero": "3246",
+            "Ccn_1_Libelle": "Animation socioculturelle",
+            "Ccn_2_Numero": "",
+            "Ccn_2_Libelle": "",
+            "Ccn_3_Numero": "",
+            "Ccn_3_Libelle": ""
+        }
+    ],
+    "Certificateurs" : [
+        {
+            "Siret_Certificateur": "13002191800011",
+            "Nom_Certificateur": "CLERMONT AUVERGNE INP"
+        }
+    ],
+    "Formatcode": [
+        {
+            "Formatcode_Code": "22624",
+            "Formatcode_Libelle": "22624 : Installation frigorifique"
+        }
+    ],
+    "Nsf": [
+        {
+            "Nsf_Code": "312t",
+            "Nsf_Intitule": "312t : Négociation et vente"
+        }
+    ],
+    "Partenaire": [
+        {
+            "Siret_Partenaire": "13002191800011",
+            "Nom_Partenaire": "CLERMONT AUVERGNE INP",
+            "Habilitation_Partenaire": "HABILITATION_ORGA_FORM"
+        }
+    ],
+    "Rome":[
+        {
+            "Codes_Rome_Code": "M1203",
+            "Codes_Rome_Libelle": "Comptabilité"
+        }
+    ],
+    "Standard":[
+        {
+            "Id_Fiche": "9523",
+            "Intitule": "Assistant(e) en comptabilité et gestion",
+            "Abrege_Libelle": "TP",
+            "Abrege_Intitule": "Titre professionnel",
+            "Nomenclature_Europe_Niveau": "NIV4",
+            "Nomenclature_Europe_Intitule": "niveau4",
+            "Accessible_Nouvelle_Caledonie": "Non",
+            "Accessible_Polynesie_Francaise": "Non",
+            "Date_dernier_jo": "19/07/2003",
+            "Date_Decision": "",
+            "Date_Fin_Enregistrement": "",
+            "Date_Effet": "",
+            "Type_Enregistrement": "Enregistrement de droit",
+            "Validation_Partielle": "",
+            "Actif": "INACTIVE"
+            }
+    ]
+
+}
