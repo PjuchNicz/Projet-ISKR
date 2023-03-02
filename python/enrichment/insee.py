@@ -1,7 +1,7 @@
 import os
 import requests
 
-INSEE_API_KEY = "539567b9-b3a9-3b69-b5e8-2bf61f940dcf"
+INSEE_API_KEY = ""
 
 def information_siret(siret):
     # Get information about a siret

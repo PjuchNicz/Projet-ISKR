@@ -1,7 +1,7 @@
 import os
 import requests
 
-GOOGLE_API_KEY = "AIzaSyC35VZZf6fnMau_hOOdq2qdzz7__eElVmo"
+GOOGLE_API_KEY = ""
 
 def autocomplete_get(name):
     # Function to fetch get to url and return json
